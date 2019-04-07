@@ -2,42 +2,65 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Axion</title>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <!-- header menu-->
-    <header>
-      <nav class="header__nav nav">
-        <div class="nav__left">
-          <a class="nav__logo" href="index.html"><img class="header__logo" src="images/Axion-logo-1.png" alt="Logo"></a>
-          <a class="nav__item">Shop</a>
-          <a class="nav__item">News</a>
-          <a class="nav__item">Team</a>
-          <a class="nav__item">Legacy</a>
-          <a class="nav__item">Help</a>
-        </div>
-        <div class="nav__right">
-          <div class="nav__search">
-            <input class="nav__search-text" type="text">
-            <img class="nav__search-button" src="/images/search.png" alt="Search">
+    <!-- header -->
+    <header class="header">
+      <!-- main menu -->
+      <div class="header__wrapper container">
+        <nav class="header__nav main-menu">
+          <div class="main-menu__left">
+            <a class="header__logo" href="index.html"><img class="logo" src="images/Axion-logo-1.png" alt="Logo"></a>
+            <a class="menu__item menu-item-left menu-text" href="#">Shop</a>
+            <a class="menu__item menu-item-left menu-text" href="#">News</a>
+            <a class="menu__item menu-item-left menu-text" href="#">Team</a>
+            <a class="menu__item menu-item-left menu-text" href="#">Legacy</a>
+            <a class="menu__item menu-item-left menu-text" href="#">Help</a>
           </div>
-          <a class="nav__item">Sign in</a>
-          <a class="nav__item nav__cart-number">1</a>
-          <a class="nav__item">Cart</a>
-          <a class="nav__item lang"></a>
-        </div>
-      </nav>
+          <div class="main-menu__right">
+            <a class="menu__item menu-item-right lang" href="#">
+              <img class="menu__item menu-lang-button" src="images/us.svg" alt="lang">
+            </a>
+            <a class="menu__item menu-item-right menu-cart-number" href="#">1</a>
+            <a class="menu__item menu-item-right menu-text" href="#">Cart</a>
+            <a class="menu__item menu-item-right menu-text" href="#">Sign in</a>
+            <div class="menu__search menu-item-right">
+              <input class="menu__item menu-search-text" type="text">
+              <img class="menu__item menu-search-button" src="images/search.svg" alt="Search">
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- moobile menu -->
+      <div class="header__mob-wrapper container">
+        <nav class="header__mob-nav mob-main-menu">
+          <div class="main-menu__left">
+            <a class="header__mob-logo" href="index.html">
+              <img class="mob-logo" src="images/Axion-logo-mobile.svg" alt="Logo">
+            </a>
+          </div>
+          <div class="main-menu__right">
+            <div class="mob-menu__item burger-menu">
+              <div class="mob-menu__item burger-menu-center"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- banner section -->
     <section class="banner">
-      <div class="banner__img">
-        <img src="/images/banner.png" alt="">
+      <div class="banner__wrapper container">
+        <h1 class="banner__header">Legendary footwear reborn.</h1>
+        <div class="banner__text-wrapper">
+          <p class="banner__text">Shop now</p>
+          <div class="arrow-right"></div>
+        </div>
       </div>
-      <h1 class="banner__header">Legendary footwear reborn.</h1>
-      <p class="banner__text">Shop now</p>
     </section>
 
     <!-- featured product section -->
