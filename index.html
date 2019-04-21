@@ -8,65 +8,62 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <!-- header -->
+  
+  <!-- header section -->
     <header class="header">
       <!-- main menu -->
-      <div class="header__wrapper container">
-        <nav class="header__nav main-menu">
-          <div class="main-menu__left">
-            <a class="header__logo" href="index.html"><img class="logo" src="images/Axion-logo-1.png" alt="Logo"></a>
-            <a class="menu__item menu-item-left menu-text" href="#">Shop</a>
-            <a class="menu__item menu-item-left menu-text" href="#">News</a>
-            <a class="menu__item menu-item-left menu-text" href="#">Team</a>
-            <a class="menu__item menu-item-left menu-text" href="#">Legacy</a>
-            <a class="menu__item menu-item-left menu-text" href="#">Help</a>
+      <nav class="header__nav header-menu wrapper">
+        <div class="header-menu__left">
+          <a class="header-menu__item-block header-menu__logo" href="index.html">
+            <img class="header-menu__img-logo" src="images/Axion-logo-1.png" alt="Logo">
+          </a>
+          <a class="header-menu__item-text" href="#">Shop</a>
+          <a class="header-menu__item-text" href="#">News</a>
+          <a class="header-menu__item-text" href="#">Team</a>
+          <a class="header-menu__item-text" href="#">Legacy</a>
+          <a class="header-menu__item-text" href="#">Help</a>
+        </div>
+        <div class="header-menu__right">
+          <div class="header-menu__item-block header-menu__search-wrapper">
+            <input class="header-menu__item-block header-menu__search-text" type="text">
+            <img class="header-menu__item-block header-menu__search-button" src="images/search.svg" alt="Search">
           </div>
-          <div class="main-menu__right">
-            <a class="menu__item menu-item-right lang" href="#">
-              <img class="menu__item menu-lang-button" src="images/us.svg" alt="lang">
-            </a>
-            <a class="menu__item menu-item-right menu-cart-number" href="#">1</a>
-            <a class="menu__item menu-item-right menu-text" href="#">Cart</a>
-            <a class="menu__item menu-item-right menu-text" href="#">Sign in</a>
-            <div class="menu__search menu-item-right">
-              <input class="menu__item menu-search-text" type="text">
-              <img class="menu__item menu-search-button" src="images/search.svg" alt="Search">
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- moobile menu -->
-      <div class="header__mob-wrapper container">
-        <nav class="header__mob-nav mob-main-menu">
-          <div class="main-menu__left">
-            <a class="header__mob-logo" href="index.html">
-              <img class="mob-logo" src="images/Axion-logo-mobile.svg" alt="Logo">
-            </a>
-          </div>
-          <div class="main-menu__right">
-            <div class="mob-menu__item burger-menu">
-              <div class="mob-menu__item burger-menu-center"></div>
-            </div>
-          </div>
-        </nav>
-      </div>
+          <a class="header-menu__item-text" href="#">Sign in</a>
+          <a class="header-menu__item-text" href="#">Cart</a>
+          <a class="header-menu__item-block header-menu__cart-number" href="#">1</a>
+          <a class="header-menu__item-block header-menu__lang-wrapper" href="#">
+            <img class="header-menu__lang-button" src="images/us.svg" alt="lang">
+          </a>
+        </div>
+        <!-- moobile menu -->
+        <div class="header-menu__mob-left">
+          <a class="header-menu__item-block header-menu__mob-logo" href="index.html">
+            <img class="header-menu__img-mob-logo" src="images/Axion-logo-mobile.svg" alt="Logo">
+          </a>
+        </div>
+        <div class="header-menu__mob-right">
+          <div class="header-menu__item-block header-menu__burger-menu"></div>
+        </div>
+      </nav>
     </header>
 
     <!-- banner section -->
     <section class="banner">
-      <div class="banner__wrapper container">
-        <h1 class="banner__header">Legendary footwear reborn.</h1>
-        <div class="banner__text-wrapper">
-          <p class="banner__text">Shop now</p>
-          <div class="arrow-right"></div>
+      <div class="banner__img">
+        <div class="banner__text-wrapper wrapper">
+          <h1 class="banner__header">Legendary footwear reborn.</h1>
+          <div class="banner__arrow-wrapper arrow-wrapper">
+            <p class="banner__arrow-text arrow-text">Shop now</p>
+            <div class="banner__arrow arrow"></div> 
+          </div>
         </div>
       </div>
     </section>
 
     <!-- featured product section -->
     <section class="featured">
-      <div class="featured__wrapper featured container">
-        <h1 class="featured__header">Featured product</h1>
+      <div class="featured__wrapper wrapper">
+        <h1 class="featured__header section-header">Featured product</h1>
         <div class="featured__items-wrapper">
           <div class="featured__item">
             <div class="featured__img featured-img1"></div>
@@ -129,17 +126,17 @@
 
     <!-- video section -->
     <section class="video">
-      <div class="video__container container">
-        <div class="video__player player">
+      <div class="video__wrapper wrapper">
+        <div class="video__player">
           <img class="video__img" src="images/video.png" alt="video">
-          <div class="player__circle"><div class="player__play"></div></div>
+          <div class="video__player-circle"><div class="video__play"></div></div>
         </div>
-        <div class="video__article article">
-          <h2 class="article__header">Legendary footwear reborn</h2>
-          <p class="article__paragraph">We are a brand with a history and are relaunching for 2019. We've been a part of the skater's family ever since its early teenage years. And now we presentate a new footwear collection.</p>
-          <div class="article__text-wrapper">
-            <p class="banner__text">Learn more</p>
-            <div class="arrow-right"></div>
+        <div class="video__article-wrapper">
+          <h2 class="video__header section-header">Legendary footwear reborn</h2>
+          <p class="video__paragraph">We are a brand with a history and are relaunching for 2019. We've been a part of the skater's family ever since its early teenage years. And now we presentate a new footwear collection.</p>
+          <div class="video__arrow-wrapper arrow-wrapper">
+            <p class="video__arrow-text arrow-text">Learn more</p>
+            <div class="arrow"></div>
           </div>
         </div>
       </div>
@@ -147,48 +144,49 @@
 
     <!-- recent stories section -->
     <section class="recent">
-      <div class="recent__container container">
-        <h2 class="recent__header featured__header">Recent stories</h2>
+      <div class="recent__wrapper wrapper">
+        <h2 class="recent__header section-header">Recent stories</h2>
         <div class="recent__items-wrapper">
           <div class="recent__item recent-item1">
             <img class="recent__img" src="images/recent1.png" alt="recent">
-            <div class="recent__article recent-article">
-              <h3 class="recent-article__header">Presents Justin Anagoa</h4>
-              <p class="recent-article__text">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</p>
-              <div class="recent__arrow-date-wrapper arrow-date">
-                <div class="arrow-date__arrow-wrapper">
-                 <p class="banner__text arrow-date__text">Learn more</p>
-                 <div class="arrow-right arrow-date__arrow"></div>
+            <div class="recent__article">
+              <h3 class="recent__article-header">Presents Justin Anagoa</h4>
+              <p class="recent__text">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</p>
+              <div class="recent__date-wrapper">
+                <div class="recent__arrow-wrapper arrow-wrapper">
+                  <p class="recent__arrow-text arrow-text">Learn more</p>
+                  <div class="recent__arrow arrow"></div>
                 </div>
-                <div class="arrow-date__date">11.08.2018</div>
+                <div class="recent__date">11.08.2018</div>
               </div>
             </div>
           </div>
           <div class="recent__item recent-item2">
             <img class="recent__img" src="images/recent2.png" alt="recent">
             <div class="recent__article recent-article">
-              <h3 class="recent-article__header">First Frontside flip</h3>
-              <p class="recent-article__text">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. <br>Photo:Yoon Sul</p>
-              <div class="recent__arrow-date-wrapper arrow-date">
-                <div class="arrow-date__arrow-wrapper">
-                 <p class="banner__text arrow-date__text">Learn more</p>
-                 <div class="arrow-right arrow-date__arrow"></div>
+              <h3 class="recent__article-header">First Frontside flip</h3>
+              <p class="recent__text">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. <br>Photo:Yoon Sul</p>
+              <div class="recent__date-wrapper">
+                <div class="recent__arrow-wrapper arrow-wrapper">
+                  <p class="recent__arrow-text arrow-text">Learn more</p>
+                  <div class="recent__arrow arrow"></div>
                 </div>
-                <div class="arrow-date__date">17.08.2018</div>
+                <div class="recent__date">11.08.2018</div>
               </div>
             </div>
           </div>
           <div class="recent__item recent-item3">
             <img class="recent__img" src="images/recent3.png" alt="recent">
             <div class="recent__article recent-article">
-              <h3 class="recent-article__header">Kevin Baekkel is Pro</h3>
+              <h3 class="recent__article-header">Kevin Baekkel is Pro</h3>
               <p class="recent-article__text">Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.</p>
               <div class="recent__arrow-date-wrapper arrow-date">
-                <div class="arrow-date__arrow-wrapper">
-                 <p class="banner__text arrow-date__text">Learn more</p>
-                 <div class="arrow-right arrow-date__arrow"></div>
+                <div class="recent__date-wrapper">
+                <div class="recent__arrow-wrapper arrow-wrapper">
+                  <p class="recent__arrow-text arrow-text">Learn more</p>
+                  <div class="recent__arrow arrow"></div>
                 </div>
-                <div class="arrow-date__date">29.07.2018</div>
+                <div class="recent__date">11.08.2018</div>
               </div>
             </div>
           </div>
@@ -198,71 +196,67 @@
 
     <!-- featured gallery section -->
     <section class="tagged">
-      <div class="tagged__container container">
-          <div class="tagged__black-wrapper">
-            <div class="tagged__header-wrapper">
-              <h1 class="tagged__header featured__header">#axionfootwear</h1>
-            </div>
-          </div>
-          <div class="tagged__photo-wrapper">
-            <div class="tagged__item"><img class="tagged__img" src="images/tagged1.png" alt="tagged"></div>
-            <div class="tagged__item"><img class="tagged__img" src="images/tagged2.png" alt="tagged"></div>
-            <div class="tagged__item"><img class="tagged__img" src="images/tagged3.png" alt="tagged"></div>
-            <div class="tagged__item"><img class="tagged__img" src="images/tagged4.png" alt="tagged"></div>
-            <div class="tagged__item"><img class="tagged__img" src="images/tagged5.png" alt="tagged"></div>
-            <div class="tagged__item"><img class="tagged__img" src="images/tagged6.png" alt="tagged"></div>
-            <div class="tagged__item tagged__item-hidden2"><img class="tagged__img" src="images/tagged7.png" alt="tagged"></div>
-            <div class="tagged__item tagged__item-hidden1"><img class="tagged__img" src="images/tagged8.png" alt="tagged"></div>
-          </div>
+      <div class="tagged__black-wrapper">
+        <div class="tagged__header-wrapper wrapper">
+          <h1 class="tagged__header section-header">#axionfootwear</h1>
+        </div>
+      </div>
+      <div class="tagged__photo-wrapper wrapper">
+        <div class="tagged__item"><img class="tagged__img" src="images/tagged1.png" alt="tagged"></div>
+        <div class="tagged__item"><img class="tagged__img" src="images/tagged2.png" alt="tagged"></div>
+        <div class="tagged__item"><img class="tagged__img" src="images/tagged3.png" alt="tagged"></div>
+        <div class="tagged__item"><img class="tagged__img" src="images/tagged4.png" alt="tagged"></div>
+        <div class="tagged__item"><img class="tagged__img" src="images/tagged5.png" alt="tagged"></div>
+        <div class="tagged__item"><img class="tagged__img" src="images/tagged6.png" alt="tagged"></div>
+        <div class="tagged__item tagged__item-hidden2"><img class="tagged__img" src="images/tagged7.png" alt="tagged"></div>
+        <div class="tagged__item tagged__item-hidden1"><img class="tagged__img" src="images/tagged8.png" alt="tagged"></div>
       </div>
     </section>
 
     <!-- footer menu, copyright and social icons -->
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__items-wrapper">
-          <div class="footer__item">
-            <h4 class="footer-nav__header">My account</h4>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Login</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Wish List</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Order History</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Track order</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Gift cards</a></p>
+      <div class="footer__menu-wrapper wrapper">
+        <nav class="footer__nav">
+          <h4 class="footer__header">My account</h4>
+          <a class="footer__item">Login</a>
+          <a class="footer__item">Wish List</a>
+          <a class="footer__item">Order History</a>
+          <a class="footer__item">Track order</a>
+          <a class="footer__item">Gift cards</a>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__header footer__header-margin">Customer service</h4>
+          <a class="footer__item">Contact us</a>
+          <a class="footer__item">Help/FAQ</a></p>
+          <a class="footer__item">Shipping</a>
+          <a class="footer__item">Returns</a></p>
+          <a class="footer__item">Size guide</a>
+          <a class="footer__item">Holiday shopping</a></p>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__header footer__header-margin">Miscellaneous</h4>
+          <a class="footer__item">About Us</a>
+          <a class="footer__item">Careers</a></p>
+          <a class="footer__item">Privacy Policy</a>
+          <a class="footer__item">Terms & Conditions</a></p>
+          <a class="footer__item">Ethical Policy</a>
+          <a class="footer__item">Homepage US/UK</a></p>
+        </nav>
+        <nav class="footer__nav">
+          <h4 class="footer__header footer__header-margin">Newsletter sign up</h4>
+          <a class="footer__item footer__discount">Get 10% Off Your Next Order!</a>
+          <a class="footer__header footer__sign-up">Sign up</a>
+          <div class="footer__icons-wrapper">
+            <a class="footer-icons icon-facebook"><img class="footer-icon" src="images/facebook_icon.svg" alt="Facebook"></a>
+            <a class="footer-icons icon-twitter"><img class="footer-icon" src="images/twitter_icon.svg" alt="Twitter"></a>
+            <a class="footer-icons icon-instagram"><img class="footer-icon" src="images/instagram_icon.svg" alt="Instagram"></a>
+            <a class="footer-icons icon-pinterest"><img class="footer-icon" src="images/pinterest_icon.svg" alt="Pinterest"></a>
           </div>
-          <div class="footer__item">
-            <h4 class="footer-nav__header footer-nav__header-margin">Customer service</h4>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Contact us</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Help/FAQ</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Shipping</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Returns</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Size guide</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Holiday shopping</a></p>
-          </div>
-          <div class="footer__item">
-            <h4 class="footer-nav__header footer-nav__header-margin">Miscellaneous</h4>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">About Us</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Careers</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Privacy Policy</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Terms & Conditions</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Ethical Policy</a></p>
-            <p class="footer-nav__item-text"><a class="footer-nav__item">Homepage US/UK</a></p>
-          </div>
-          <div class="footer__item">
-            <h4 class="footer-nav__header footer-nav__header-margin">Newsletter sign up</h4>
-            <p class="footer-nav__item-text footer__discount">Get 10% Off Your Next Order!</p>
-            <p class="footer-nav__item-text"><a class="footer-sign-up footer-nav__header">Sign up</a></p>
-            <div class="footer-sign-up__social-icons">
-              <a class="footer-icons icon-facebook"><img class="footer-icon" src="images/facebook_icon.svg" alt="Facebook"></a>
-              <a class="footer-icons icon-twitter"><img class="footer-icon" src="images/twitter_icon.svg" alt="Twitter"></a>
-              <a class="footer-icons icon-instagram"><img class="footer-icon" src="images/instagram_icon.svg" alt="Instagram"></a>
-              <a class="footer-icons icon-pinterest"><img class="footer-icon" src="images/pinterest_icon.svg" alt="Pinterest"></a>
-            </div>
-          </div>
-        </div>
-        <div class="footer__copyright copyright-container container">
-          <p class="copyright-container__Axion">© 2019 Axion. All rights reserved.</p>
-          <img class="copyright-container__WebHeroSchool" src="images/webheroschool.svg" alt="WebHeroSchool">
-        </div>
+        </nav>
+      </div>
+      <div class="footer__copyright wrapper">
+        <p class="copyright__Axion">© 2019 Axion. All rights reserved.</p>
+        <img class="copyright__WebHeroSchool" src="images/webheroschool.svg" alt="WebHeroSchool"></img>
       </div>
     </footer>
   </body>
