@@ -12,14 +12,11 @@ body {
 }
 
 .wrapper {
+  max-width: 1053px;
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-/*.video {
-  width: 100%;
-}*/
 
 .section-header {
   font-family: 'montserratbold';
@@ -121,6 +118,7 @@ body {
 
 .banner__img {
   width: 90%;
+  max-width: 1053px;
   background: url("../images/unsplash.png") center no-repeat;
   background-size: cover;
   height: 280px;
@@ -498,7 +496,9 @@ body {
 --------------------------------------------------------------*/
 
 .footer {
+  max-width: 1170px;
   width: 100%;
+  margin: 0 auto;
   background-color: #000;
   color: #fff;
 }
